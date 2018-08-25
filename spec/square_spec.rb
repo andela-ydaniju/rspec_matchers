@@ -2,15 +2,15 @@ require 'spec_helper'
 
 describe 'Squares' do
   context 4 do
-    it { should be_the_square_of 2 }
+    it { is_expected.to be_the_square_of 2 }
   end
 
   context 9 do
-    it { should be_the_square_of 3 }
+    it { is_expected.to be_the_square_of 3 }
   end
 
   context 20 do
-    it { should not_be_the_square_of 4 }
+    it { is_expected.to not_be_the_square_of 4 }
   end
 
   # another way
